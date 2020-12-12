@@ -1,0 +1,124 @@
+/* Main */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: hsl(185, 75%, 39%) 100vw;
+
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: -700px -500px, right -500px bottom -500px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: hsl(229, 23%, 23%);
+  border-radius: 20px;
+  background: white;
+  height: 450px;
+  width: 340px;
+  text-align: center;
+}
+
+.card .background {
+  border-radius: 20px 20px 0 0;
+  height: 35%;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+
+.card .avatar {
+  position: relative;
+  top: -50px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/image-pierre.jpg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  border-radius: 50%;
+  border: solid white 10px;
+  margin-left: 110px;
+}
+
+.card .name,
+.card .age {
+  display: inline-block;
+  padding-bottom: 0.8rem;
+}
+
+.card .personal {
+  margin-top: -2rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  padding-right: 0.5rem;
+}
+
+.age {
+  color: #999;
+}
+
+.card .location {
+  display: block;
+  width: 100%;
+  color: #999;
+}
+
+.card .stats {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 3rem;
+  border-top: #ddd solid 1px;
+  font-size: 10px;
+}
+
+.card .stats div {
+  width: 33%;
+}
+
+.stats h3 {
+  font-weight: 400;
+}
+
+.stats p {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-position: -100px -300px, right -200px bottom -400px;
+    background-repeat: no-repeat;
+  }
+
+  /* Card */
+  .card {
+    width: 400px;
+  }
+
+  .card .avatar {
+    margin-left: 140px;
+  }
+
+  /* Footer */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
